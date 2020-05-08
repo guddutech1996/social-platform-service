@@ -1,0 +1,15 @@
+target/
+lib/
+*.patch
+.apt_generated
+.git*
+.settings
+.classpath
+.gitignore
+.factorypath
+.project
+.springBeans
+.idea
+.elasticbeanstalk/
+.mvn/wrapper/maven-wrapper.jar
+SocialApplication.iml

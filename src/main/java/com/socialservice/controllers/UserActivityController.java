@@ -1,5 +1,6 @@
 package com.socialservice.controllers;
 
+import com.socialservice.auth.AuthenticateClient;
 import com.socialservice.entity.UserActivity;
 import com.socialservice.exceptions.UserNotFoundException;
 import com.socialservice.service.UserActivityService;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+@AuthenticateClient
 @RestController
 public class UserActivityController {
 

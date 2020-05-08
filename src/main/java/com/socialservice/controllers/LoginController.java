@@ -1,5 +1,6 @@
 package com.socialservice.controllers;
 
+import com.socialservice.auth.AuthenticateClient;
 import com.socialservice.constants.URIEndpoints;
 import com.socialservice.entity.User;
 import com.socialservice.exceptions.UserNotFoundException;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+@AuthenticateClient
 @RestController
 public class LoginController {
 

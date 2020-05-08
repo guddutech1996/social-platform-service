@@ -1,6 +1,7 @@
 package com.socialservice.controllers;
 
 
+import com.socialservice.auth.AuthenticateClient;
 import com.socialservice.entity.User;
 import com.socialservice.entity.UserProfile;
 import com.socialservice.exceptions.UserNotFoundException;
@@ -9,6 +10,7 @@ import com.socialservice.service.UserProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@AuthenticateClient
 @RestController
 @RequestMapping("/user_profile")
 public class UserProfileController {
