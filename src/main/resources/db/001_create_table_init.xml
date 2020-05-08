@@ -1,0 +1,86 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet author="rgamangarg@gmail.com"
+               id="001_create_table_init_1">
+        <createTable tableName="users">
+            <column name="id" autoIncrement="true" type="INTEGER">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="email_id" type="VARCHAR" />
+            <column name="name" type="VARCHAR" />
+            <column name="date_of_birth" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="status" type="VARCHAR" />
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+        </createTable>
+    </changeSet>
+
+    <changeSet author="rgamangarg@gmail.com"
+               id="001_create_table_init_2">
+        <createTable tableName="user_friends">
+            <column name="id" autoIncrement="true"  type="INTEGER">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="peer_id" type="INTEGER" />
+            <column name="user_id" type="INTEGER" />
+            <column name="status" type="VARCHAR" />
+            <column name="requester" type="INTEGER" />
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+        </createTable>
+    </changeSet>
+
+    <changeSet author="rgamangarg@gmail.com"
+               id="001_create_table_init_3">
+        <createTable tableName="users_activity">
+            <column name="id" autoIncrement="true"  type="INTEGER">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="user_id" type="INTEGER" />
+            <column name="favourite_video_id" type="INTEGER" />
+            <column name="status" type="VARCHAR" />
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+        </createTable>
+    </changeSet>
+
+    <changeSet author="rgamangarg@gmail.com"
+               id="001_create_table_init_4">
+        <createTable tableName="user_profile">
+            <column name="id" autoIncrement="true"  type="INTEGER">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="user_id" type="INTEGER" />
+            <column name="score" type="INTEGER" />
+            <column name="calories_burnt" type="VARCHAR" />
+            <column name="heart_rate" type="VARCHAR" />
+            <column name="duration" type="VARCHAR" />
+            <column name="status" type="VARCHAR" />
+            <column name="requester" type="VARCHAR" />
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+        </createTable>
+    </changeSet>
+
+    <changeSet author="rgamangarg@gmail.com"
+               id="001_create_table_init_5">
+        <createTable tableName="video_content">
+            <column name="id" autoIncrement="true"  type="INTEGER">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="url" type="VARCHAR" />
+            <column name="name" type="VARCHAR" />
+            <column name="type" type="VARCHAR" />
+            <column name="duration" type="VARCHAR" />
+            <column name="rank" type="INTEGER" />
+            <column name="created_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+            <column name="updated_at" type="TIMESTAMP WITHOUT TIME ZONE" />
+            <column name="priority" type="INTEGER" />
+            <column name="timestamp" type="TIMESTAMP WITHOUT TIME ZONE" />
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

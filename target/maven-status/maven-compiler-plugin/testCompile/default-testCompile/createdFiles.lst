@@ -1,0 +1,7 @@
+com/socialservice/controller/VideoControllerTest.class
+com/socialservice/controller/HealthControllerTest.class
+com/socialservice/controller/NewsFeedControllerTest.class
+com/socialservice/service/LeaderBoardServiceTests.class
+com/socialservice/SocialServiceApplicationTests.class
+com/socialservice/utils/TestUtils.class
+com/random.class
