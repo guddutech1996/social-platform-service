@@ -11,4 +11,5 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <include file="db/001_create_table_init.xml"/>
+    <include file="db/002_add_unique_indexes_table_init.xml"/>
 </databaseChangeLog>

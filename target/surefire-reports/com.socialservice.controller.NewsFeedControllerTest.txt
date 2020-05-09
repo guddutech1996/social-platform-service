@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.socialservice.controller.NewsFeedControllerTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.22 s - in com.socialservice.controller.NewsFeedControllerTest

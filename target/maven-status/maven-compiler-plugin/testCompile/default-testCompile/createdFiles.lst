@@ -1,8 +1,0 @@
-com/socialservice/controller/HealthControllerTest.class
-com/socialservice/controller/LeaderBoardControllerTest.class
-com/socialservice/controller/NewsFeedControllerTest.class
-com/socialservice/service/LeaderBoardServiceTests.class
-com/socialservice/manager/UserManagerTests.class
-com/socialservice/SocialServiceApplicationTests.class
-com/socialservice/utils/TestUtils.class
-com/socialservice/service/VideoServiceImplTests.class
