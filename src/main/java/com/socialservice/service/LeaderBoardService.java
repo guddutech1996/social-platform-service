@@ -7,5 +7,5 @@ import org.springframework.stereotype.Component;
 @Component
 public interface LeaderBoardService {
 
-    public UserProfile getLeaderBoardForUser(String email) throws UserNotFoundException;
+    UserProfile getLeaderBoardForUser(String email) throws UserNotFoundException;
 }

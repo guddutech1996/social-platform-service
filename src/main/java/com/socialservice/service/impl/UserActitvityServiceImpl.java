@@ -6,7 +6,6 @@ import com.socialservice.exceptions.UserNotFoundException;
 import com.socialservice.manager.UserManager;
 import com.socialservice.repo.UserActivityRepository;
 import com.socialservice.service.UserActivityService;
-import com.socialservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

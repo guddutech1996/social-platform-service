@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface UserRequestService {
-    public UserFriend addFriend(String userEmail, String friendEmail) throws UserNotFoundException;
-    public UserFriend acceptRequest(String userEmail, String friendEmail) throws UserNotFoundException;
+    UserFriend addFriend(String userEmail, String friendEmail) throws UserNotFoundException;
+    UserFriend acceptRequest(String userEmail, String friendEmail) throws UserNotFoundException;
 }
