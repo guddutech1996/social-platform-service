@@ -6,7 +6,7 @@
   <changeSet author="rgamangarg@gmail.com" id="002_add_unique_indexes_table_init_001">
     <sql>CREATE UNIQUE INDEX user_friends_user_peer_unique  ON user_friends(user_id,peer_id) </sql>
     <sql>CREATE UNIQUE INDEX user_profile_uniq  ON user_profile(user_id) </sql>
-    <sql>CREATE UNIQUE INDEX user_email_uniq ON user(email) </sql>
+    <sql>CREATE UNIQUE INDEX user_email_uniq ON users(email_id) </sql>
     <sql>CREATE UNIQUE INDEX video_content_url_uniq ON video_content(url) </sql>
   </changeSet>
 </databaseChangeLog>

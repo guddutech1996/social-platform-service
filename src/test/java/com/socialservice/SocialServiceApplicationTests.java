@@ -20,7 +20,5 @@ import java.util.List;
 public class SocialServiceApplicationTests {
 
     @Test
-    public void contextLoads() {
-
-    }
+    public void contextLoads() { }
 }

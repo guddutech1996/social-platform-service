@@ -2,6 +2,7 @@ package com.socialservice.controllers;
 
 
 import com.socialservice.auth.AuthenticateClient;
+import com.socialservice.constants.admin.URIEndpoints;
 import com.socialservice.entity.VideoContent;
 import com.socialservice.manager.VideoManager;
 import com.socialservice.service.VideoService;
@@ -12,7 +13,7 @@ import java.util.List;
 
 @AuthenticateClient
 @RestController
-@RequestMapping("/videos")
+@RequestMapping(URIEndpoints.VIDEO_CONTENT_BASE)
 public class VideoController {
 
     @Autowired private VideoManager videoManager;
@@ -24,7 +25,7 @@ public class VideoController {
      *
      * @return  List<VideoContent>
      */
-    @GetMapping("/popular")
+    @GetMapping(com.socialservice.constants.URIEndpoints.GET_POPULAR_VIDOES)
     public List<VideoContent> getPopularVideos(){
         return videoService.getPopularVideos();
     }
@@ -35,7 +36,7 @@ public class VideoController {
      * param String email
      * @return List<VideoContent>
      */
-    @GetMapping("/favourites")
+    @GetMapping(com.socialservice.constants.URIEndpoints.GET_FAVOURITE_VIDEOS)
     public List<VideoContent> getFavouriteVideos(@RequestParam(value = "email") String email){
         return videoService.getFavouriteVideos(email);
     }
@@ -46,7 +47,7 @@ public class VideoController {
      * @return List<VideoContent>
      */
 
-    @PostMapping("/create")
+    @PostMapping(URIEndpoints.CREATE_VIDEO_CONTENT)
     public VideoContent createVideo(@RequestBody VideoContent videoContent){
         System.out.println(videoContent);
         return videoManager.saveVideo(videoContent);

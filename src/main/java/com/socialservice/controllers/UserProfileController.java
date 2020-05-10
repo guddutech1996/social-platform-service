@@ -2,6 +2,7 @@ package com.socialservice.controllers;
 
 
 import com.socialservice.auth.AuthenticateClient;
+import com.socialservice.constants.admin.URIEndpoints;
 import com.socialservice.entity.User;
 import com.socialservice.entity.UserProfile;
 import com.socialservice.exceptions.UserNotFoundException;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @AuthenticateClient
 @RestController
-@RequestMapping("/user_profile")
+@RequestMapping(URIEndpoints.USER_PROFILE_BASE)
 public class UserProfileController {
 
     @Autowired private UserProfileService userProfileService;
